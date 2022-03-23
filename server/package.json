@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "script": "nodemon app.js",
     "start": "node app.js",
-    "build": "cd ../client && yarn run build",
-    "install-client": "cd ../client && yarn install",
-    "heroku-postbuild": "yarn run install-client && yarn run build"
+    "build": "cd ../client && npm run build",
+    "install-client": "cd ../client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "author": "",
   "license": "ISC",
