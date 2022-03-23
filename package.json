@@ -1,0 +1,14 @@
+{
+  "name": "user-location-project",
+  "version": "1.0.0",
+  "description": "user location project",
+  "main": "app.js",
+  "author": "unizam12 <21100095@lums.edu.pk>",
+  "license": "MIT",
+  "scripts": {
+    "server-start": "node server/server",
+    "server": "nodemon server/server",
+    "client-start": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
