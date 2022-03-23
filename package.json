@@ -6,7 +6,7 @@
   "author": "unizam12 <21100095@lums.edu.pk>",
   "license": "MIT",
   "scripts": {
-    "start": "cd ./server npm install && node app.js",
+    "start": "cd ./server node app.js",
     "server": "nodemon server/app.js",
     "client-start": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -15,5 +15,7 @@
     "heroku-postbuild": "npm run install-client && npm run build"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "express": "^4.16.4"
+  }
 }
