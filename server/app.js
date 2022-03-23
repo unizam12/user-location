@@ -59,6 +59,7 @@ app.use((req, res, next) => {
 mongoose
   .connect(process.env.MONGODB_URL)
   .then(() => {
+    console.log("running on port ", PORT);
     app.listen(PORT);
   })
   .catch((err) => {

@@ -5,6 +5,9 @@
   "main": "app.js",
   "author": "unizam12 <21100095@lums.edu.pk>",
   "license": "MIT",
+  "engines": {
+    "node": "14.17.6"
+  },
   "scripts": {
     "start": "cd ./server node app.js",
     "server": "nodemon server/app.js",
@@ -12,7 +15,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "cd ./client && npm run build",
     "install-client": "cd ./client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build && cd ./server npm install && cd .."
+    "heroku-postbuild": "npm run install-client && npm run build && cd ./server npm install"
   },
   "dependencies": {},
   "devDependencies": {
