@@ -10,8 +10,8 @@
     "server": "nodemon server/server",
     "client-start": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "cd ../client && yarn run build",
-    "install-client": "cd ../client && yarn install",
+    "build": "cd ./client && yarn run build",
+    "install-client": "cd ./client && yarn install",
     "heroku-postbuild": "yarn run install-client && yarn run build"
   }
 }
