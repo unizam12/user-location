@@ -49,12 +49,11 @@ const signup = async (req, res, next) => {
     );
     return next(error);
   }
-  console.log(req.file.path);
 
   const createUser = new User({
     name: name,
     email: email,
-    image: req.file.path,
+    // image: req.file.path,
     password: hashedPassword,
     places: [],
   });
