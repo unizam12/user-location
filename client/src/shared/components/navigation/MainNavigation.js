@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const MainNavigation = (props) => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
   const openDrawer = () => {
-    setDrawerIsOpen(true);
+    setDrawerIsOpen(!drawerIsOpen);
   };
   const closeDrawer = () => {
     setDrawerIsOpen(false);
