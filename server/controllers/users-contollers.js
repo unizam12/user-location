@@ -49,18 +49,18 @@ const signup = async (req, res, next) => {
     );
     return next(error);
   }
+  console.log(req.file.path);
 
   const createUser = new User({
     name: name,
     email: email,
-    // image: req.file.path,
+    image: req.file.path,
     password: hashedPassword,
     places: [],
   });
   try {
     await createUser.save();
   } catch (error) {
-    // console.log(console.log(error));
     return next(
       new HttpError("Creating new user failed, please try again later", 500)
     );

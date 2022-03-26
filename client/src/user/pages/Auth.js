@@ -34,7 +34,6 @@ const Auth = () => {
     false
   );
   const authSubmitHandler = async (event) => {
-    console.log(process.env.REACT_APP_SERVER_URL);
     event.preventDefault();
     // console.log(formState.inputs);
 
@@ -118,7 +117,7 @@ const Auth = () => {
               onInput={inputHandler}
             />
           )}
-          {/* {!isLogin && <ImageUpload center id="image" onInput={inputHandler} />} */}
+          {!isLogin && <ImageUpload center id="image" onInput={inputHandler} />}
           <Input
             element="input"
             id="email"
